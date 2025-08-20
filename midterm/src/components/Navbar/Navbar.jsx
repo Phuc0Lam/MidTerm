@@ -5,7 +5,7 @@ const Navbar = () => {
     <div className='menu'>
       <div className='logo'>Anonime</div>
       <div className="home">Home</div>
-      <div className="listAnime">listAnime</div>
+      <div className="listAnime">List anime</div>
       <div className="search1"><input className='search' type="text" placeholder='Search anime or movie'/></div>
     </div>
   )

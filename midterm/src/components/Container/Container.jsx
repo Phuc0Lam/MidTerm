@@ -6,11 +6,17 @@ const Container = (props) => {
     <div className='container' >
         <div className='tittle'>Explore</div>
         <div>What are you gonna watch today ?</div>
-        <div>{props.moviename}</div>
-        {/* <img src="public/image/img1.jpg" alt="" /> */}
-        <div className="content" style={props.style} >
+        
+        
+        <div className="content" >
+          <img className='img-1' src={props.img} alt="" />
           
         </div>
+        <div className='movie-name'>
+          {props.moviename}
+          <div className="description">{props.description}</div>
+          </div>
+          
     </div>
   )
 }
