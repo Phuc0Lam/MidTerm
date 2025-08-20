@@ -5,7 +5,7 @@ const Container = (props) => {
   return (
     <div className='container' >
         <div className='tittle'>Explore</div>
-        <div>What are you gonna watch today ?</div>
+        <div className='a'>What are you gonna watch today ?</div>
         
         
         <div className="content" >

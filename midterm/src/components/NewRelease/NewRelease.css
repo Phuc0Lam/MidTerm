@@ -1,3 +1,7 @@
+.tittle {
+    font-size: 36px;
+}
+
 .container-movie {
     display: flex;
     text-align: center;
