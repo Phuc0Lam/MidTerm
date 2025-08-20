@@ -1,0 +1,23 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+}
+.home, .listAnime{
+    padding: 10px;
+    font-size: 10px;
+    color: gray;
+}
+.search{
+   background-color: #868686;
+   width: 170px;
+   height: 20px;
+   border-radius: 37px;
+   border: none;
+   font-size: 10px;
+   padding: 3px 10px;
+}
