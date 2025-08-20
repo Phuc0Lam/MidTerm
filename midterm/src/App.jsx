@@ -57,13 +57,23 @@ function App() {
             episode: "28"
         }
     ]
-    const selectedData = data.find(item => item.id === "1");
+    let selectedData = data.find(item => item.id === "1");
+    const [selectedId, setSelectedId] = useState(1);
+    const handleFrameClick = (id) => {
+      setSelectedId(id);
+      console.log(id);
+    selectedData = data.find(item => item.id == id)
+    
+  } 
+  selectedData = data.find(item => item.id == selectedId)
+  console.log(selectedData);
+    
     const data1 = data.filter(item => item.id !== "1");
   return (
     <>
       <Navbar />
       <Container  img ={selectedData.image}moviename={selectedData.movieName} description={selectedData.description}/>
-      <NewRelease data={data1} />
+      <NewRelease data={data1} onFrameClick={handleFrameClick}/>
    </>
   )
 }
